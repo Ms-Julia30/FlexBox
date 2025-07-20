@@ -2,26 +2,40 @@
     box-sizing: border-box;
 }
 
+html {
+    --user-photo-size: 75px;
+}
+
 .userList {
 
 }
 
 .userListItem {
-
+    display: flex;
+    align-items: center;
 }
 
 .userImageWrapper {
-
+    width: var(--user-photo-size);
+    height: var(--user-photo-size);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid purple;
 }
 
+.userImageWrapper img {
+    width: 100%; /*From Parent Element*/
+    height: 100%;
+    object-fit: cover;
+}
 .userName {
-
+    
 }
 
 .userDescription {
 
 }
 
-.trachBtn {
-    
+.trashBtn {
+    margin-left: auto;
 }
