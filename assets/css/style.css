@@ -7,12 +7,14 @@ html {
 }
 
 .userList {
-
+    padding: 15px;
 }
 
 .userListItem {
     display: flex;
     align-items: center;
+    gap: 15px;
+    box-shadow: o o 5px grey;
 }
 
 .userImageWrapper {
@@ -28,6 +30,7 @@ html {
     height: 100%;
     object-fit: cover;
 }
+
 .userName {
     
 }
@@ -38,4 +41,13 @@ html {
 
 .trashBtn {
     margin-left: auto;
+    border: none;
+    background-color: transparent;
+    color: grey;
+    font-size: 32px;
+}
+
+.trashBtn:hover {
+    color: red;
+    cursor: pointer;
 }
