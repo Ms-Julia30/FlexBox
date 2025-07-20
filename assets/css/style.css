@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*
 html {
     --user-photo-size: 75px;
 }
@@ -27,10 +28,10 @@ html {
 }
 
 .userImageWrapper img {
-    width: 100%; /*From Parent Element*/
+    width: 100%; 
     height: 100%;
     object-fit: cover;
-    flex-shrink: 0; /*Prevents image from shrinking*/
+    flex-shrink: 0;
 }
 
 .userName {
@@ -52,4 +53,46 @@ html {
 .trashBtn:hover {
     color: red;
     cursor: pointer;
+}
+
+*/
+
+html {
+
+}
+
+body {
+    padding: 20px;
+}
+
+.article {
+    max-width: 900px;
+    width: 100%;
+    min-width: 300px;
+    box-shadow: 0 0 5px grey;
+    margin: 20px;
+    padding: 20px;
+    gap: 15px;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.articleDescription {
+
+}
+
+.imageWrapper {
+
+}
+
+.articleDescription, .imageWrapper {
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
